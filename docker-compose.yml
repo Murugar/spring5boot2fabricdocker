@@ -1,8 +1,8 @@
 version: '2'
 services:        
-    demo-fabric8:
-        image: diegolirio/demo-fabric8:0.0.2
-        container_name: demo-fabric8
+    test:
+        image: test/spring5boot2fabricdocker:1.0
+        container_name: test
         ports:
             - 3001:8080
         networks: 

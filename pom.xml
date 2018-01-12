@@ -5,7 +5,7 @@
 
 	<groupId>com.iqmsoft</groupId>
 	<artifactId>spring5boot2fabricdocker</artifactId>
-	<version>0.0.2</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>spring5boot2fabricdocker</name>
@@ -90,7 +90,7 @@
 	</pluginRepositories>
 
 	<build>
-		<finalName>demo-fabric8</finalName>
+		<finalName>spring5boot2fabricdocker</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -104,7 +104,7 @@
                     <images>
                         <image>
                             <alias>${project.parent.artifactId}</alias>
-                            <name>diegolirio/${project.name}:${project.version}</name>
+                            <name>test/${project.name}:${project.version}</name>
                             <build> 
                                 <from>java:8</from>
                                 <assembly>
